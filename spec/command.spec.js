@@ -19,6 +19,8 @@ describe("Command class", function() {
   })
 });
 
+
+
 // TEST 2 & 3
 // - Create a new insist(object) of of the Command Class
 // - check if the commandType matches

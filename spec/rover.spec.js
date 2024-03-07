@@ -54,8 +54,6 @@ it("responds correctly to the mode change command", function(){
 // TEST 12 !!!!!
 it("responds with a false completed value when attempting to move in LOW_POWER mode", function(){
   let rover = new Rover(98382, "LOW_POWER");
-  // MAYBE COMBINE WITH new ROVER and just add mode to "LOW_POWER". ie new Rover(98382, "LOW_POWER")
-  // rover.receiveMessage(new Message("message,Testing MODE_CHANGE command to LOW_POWER", [new Command("MODE_CHANGE", "LOW_POWER")]));
   let message = new Message('message, Testing MOVE command', [new Command('MOVE', 10000)]);
   let response = rover.receiveMessage(message);
   expect(response.results[0].completed).toEqual(false);

@@ -10,20 +10,7 @@ class Rover {
       this.mode = mode;
       this.generatorWatts = generatorWatts; 
       }; 
-       // function code (.this??) INSTRUSTIONS SAY OUTSIDE CONSTRUCTOR
-   //response = rover.receivedMessage(message); // not sure how to do the function receive Message
-   //TODO 
-   //   1. Function recieves message object. 
-   //   2. Then Returns a RESPONSE
-   //        a) is a complex object with lots of Parts (i think the hardest part)
-   //        b) handles the various types of commands
-   //        c) Updates Rover Properties. 
-   //        d) Puts Resuslts(updates) in an ARRAY. ( 5 things in array
-   //             1. message
-   //             2. results [is array with - completed, completed, roverStatus{ mode: "LOW_POWER",generatorWatts: 110, position: 98382 }     ]
-   //    *** if the Command works then it will return "completed : true". If it is not completed (low-fuel) then it will return   "completed : false"  
-//       *** roverStatus is an Array(object with an array??) inside the "results" array. It inclueds "mode" "generatorWatts" and "position". (look at part 4 instructions image)                  
-   
+                
       receiveMessage(message) {
          const results = [];
 // for Loop Statment  loop over each command in the commands array of the message object
